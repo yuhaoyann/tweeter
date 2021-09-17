@@ -35,8 +35,9 @@ nav div {
 
 #nav-right {
   display: flex;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: sans-serif;
   align-content: center;
+  font-weight: 200;
 }
 
 .padding-right {
