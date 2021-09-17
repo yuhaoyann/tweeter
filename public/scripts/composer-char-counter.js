@@ -1,5 +1,5 @@
 $(document).ready(function() {
- $("#tweet-text").keydown(function() {
+ $("#tweet-text").keyup(function() {
   const counter = $(this).parents().find(".counter");
   counter.val(140 - $(this).val().length);
   if (counter.val() <= 0) {
