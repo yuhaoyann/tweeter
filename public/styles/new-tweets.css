@@ -14,17 +14,19 @@ main section form label {
 }
 
 #tweet-text {
-  min-height: auto;
+  min-height: 100px;
   padding: 0px;
   border-top-width: 0px;
   border-left-width: 0px;
   border-right-width: 0px;
   border-bottom-width: 5px;
+  margin-top: 1em;
   outline: none;
   background-color: #f4f1ec;
   resize: none;
   overflow: hidden;
   font-family: sans-serif;
+  font-weight: 200;
 }
 
 #tweet-button {
