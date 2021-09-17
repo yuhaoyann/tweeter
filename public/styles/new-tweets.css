@@ -1,6 +1,7 @@
 main section form {
   display: flex;
   flex-direction: column;
+  margin: 0.5em;
 }
 
 main section form label {
@@ -13,7 +14,6 @@ main section form label {
 }
 
 #tweet-text {
-  width: 100%;
   min-height: auto;
   padding: 0px;
   border-top-width: 0px;
