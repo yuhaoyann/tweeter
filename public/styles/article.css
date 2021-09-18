@@ -13,6 +13,13 @@ article header{
   margin: 0.5em;
 }
 
+article footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0.5em;
+}
+
 article img {
   display: flex;
   vertical-align: middle;
@@ -20,31 +27,31 @@ article img {
   width: 50px;
 }
 
-#tweet-name-avator {
+#tweet-header-left {
   display: flex;
   align-content: center;
 }
 
-#tweet-name {
+#tweet-header-name {
   display: flex;
   align-items: center;
   font-family: sans-serif;
-  font-weight: 200;
+  font-weight: 100;
   margin: 0em;
   padding-left: 0.5em;
 }
 
-#tweet-handle {
+#tweet-header-handle {
   display: flex;
   align-items: center;
   color:rgb(142, 164, 172);
   font-family: sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0em;
   padding-right: 0.3em;
 }
 
-#tweet-content {
+#tweet-article-content {
   border-style: solid;
   border-top-width: 0px;
   border-left-width: 0px;
@@ -52,10 +59,21 @@ article img {
   border-bottom-width: 5px;
   margin: 0.5em;
   font-family: sans-serif;
-  font-weight: 200;
-  padding-left: 1.2em;
-  padding-right: 1.2em;
+  font-weight: 400;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
   padding-bottom: 1.2em;
   padding-top: 0em;
   word-wrap: break-word;
+}
+
+#tweet-footer-time {
+  font-family: sans-serif;
+  font-weight: 100;
+  font-size: 0.8em;
+  margin-left: 0.7em;
+}
+
+#tweet-footer-logo {
+  color: rgb(49, 23, 73);
 }
