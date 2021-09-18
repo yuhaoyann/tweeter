@@ -3,7 +3,8 @@ nav {
   width: 100%;
   background-color: #4056A1;
   color: white;
-  position: absolute;
+  position: fixed;
+  top: 0;
   z-index: 1;
 }
 
@@ -40,7 +41,8 @@ nav div {
   font-weight: 200;
 }
 
-.padding-right {
+.nav-right-bold {
+  font-weight: 400px;
   padding-right: 0.3em;
 }
 
