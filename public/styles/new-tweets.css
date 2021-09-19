@@ -5,6 +5,7 @@ main section form {
 }
 
 main section form label {
+  margin-top: 2em;
   font-family: sans-serif;
   font-weight: 600
 }
