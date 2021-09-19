@@ -47,7 +47,8 @@ main section form label {
   padding-bottom: 0.1em;
   padding-left: 0.5em;
   padding-right: 0.5em;
-  border: 0px;
+  border: solid;
+  border-color: #f4f1ec;
 }
 
 #tweet-button output {

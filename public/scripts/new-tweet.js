@@ -1,4 +1,15 @@
 $(document).ready(function() {
+
+  $("#tweet-button button").hover(function() {
+    $(this).css({"border-color": "#545149"})
+  }, function() {
+      $(this).css({"border-color": "#f4f1ec"})
+  }).mousedown(function() {
+    $(this).css({"background-color": "#545149"})
+  }).mouseup(function() {
+    $(this).css({"background-color": "#4056A1"})
+  })
+
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
     let text = $("#tweet-text").val();
