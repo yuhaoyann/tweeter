@@ -15,7 +15,7 @@ $(document).ready(function() {
           newPost();
         })
         .fail(function(xhr, status, error) {
-          alert(1+xhr +2+ status +3+ error)
+          alert(status + ":" + error)
         })
         .always(function() {
           $("#tweet-text").val('').css("height", "56px");
