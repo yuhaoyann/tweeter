@@ -1,19 +1,27 @@
 $(document).ready(function() {
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
-    let data = $( this ).serialize();
-  $.post( "/tweets/", data, function() {
-    })
-      .done(function() {
-        newPost();
+    let text = $("#tweet-text").val();
+    console.log(text.length)
+    if (text === "" || text === null) {
+      alert("Input cannot be empty or null");
+    } else if (text.length > 140) {
+      alert("Input length cannot exceed 140")
+    } else {
+      let data = $( this ).serialize();
+    $.post( "/tweets/", data, function() {
       })
-      .fail(function(xhr, status, error) {
-        alert(1+xhr +2+ status +3+ error)
-      })
-      .always(function() {
-        $("#tweet-text").val('').css("height", "56px");
-        $(".counter").val(140).css("color", "#545149");
-      });
+        .done(function() {
+          newPost();
+        })
+        .fail(function(xhr, status, error) {
+          alert(1+xhr +2+ status +3+ error)
+        })
+        .always(function() {
+          $("#tweet-text").val('').css("height", "56px");
+          $(".counter").val(140).css("color", "#545149");
+        });
+    }
 
 
   function newPost() {
