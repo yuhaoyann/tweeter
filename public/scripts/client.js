@@ -16,16 +16,16 @@ const createTweetElement = function(tweetData) {
   const $tweet = `
   <article>
           <header>
-            <div id="tweet-header-left">
+            <div class="tweet-header-left">
               <img src=${tweetData.user.avatars}>
-              <p id="tweet-header-name">${tweetData.user.name}</p>
+              <p class="tweet-header-name">${tweetData.user.name}</p>
             </div>
-            <p id="tweet-header-handle">${tweetData.user.handle}</p>
+            <p class="tweet-header-handle">${tweetData.user.handle}</p>
           </header>
-          <p id="tweet-article-content">${tweetData.content.text}</p>
+          <p class="tweet-article-content">${tweetData.content.text}</p>
           <footer>
-            <div id="tweet-footer-time">${tweetData.created_at}</div>
-            <div id="tweet-footer-logo">
+            <div class="tweet-footer-time">${tweetData.created_at}</div>
+            <div class="tweet-footer-logo">
               <i class="fas fa-flag"></i>
               <i class="fas fa-retweet"></i>
               <i class="fas fa-heart"></i>
