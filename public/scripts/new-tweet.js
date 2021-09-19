@@ -11,8 +11,8 @@ $(document).ready(function() {
         alert(1+xhr +2+ status +3+ error)
       })
       .always(function() {
-        $("#tweet-text").val('')
-        $(".counter").val(140)
+        $("#tweet-text").val('').css("height", "56px");
+        $(".counter").val(140).css("color", "#545149");
       });
 
 
