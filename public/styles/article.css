@@ -27,12 +27,12 @@ article img {
   width: 50px;
 }
 
-#tweet-header-left {
+.tweet-header-left {
   display: flex;
   align-content: center;
 }
 
-#tweet-header-name {
+.tweet-header-name {
   display: flex;
   align-items: center;
   font-family: sans-serif;
@@ -41,7 +41,7 @@ article img {
   padding-left: 0.5em;
 }
 
-#tweet-header-handle {
+.tweet-header-handle {
   display: flex;
   align-items: center;
   color:rgb(142, 164, 172);
@@ -51,7 +51,7 @@ article img {
   padding-right: 0.3em;
 }
 
-#tweet-article-content {
+.tweet-article-content {
   border-style: solid;
   border-top-width: 0px;
   border-left-width: 0px;
@@ -67,13 +67,13 @@ article img {
   word-wrap: break-word;
 }
 
-#tweet-footer-time {
+.tweet-footer-time {
   font-family: sans-serif;
   font-weight: 100;
   font-size: 0.8em;
   margin-left: 0.7em;
 }
 
-#tweet-footer-logo {
+.tweet-footer-logo {
   color: rgb(45, 19, 68);
 }
