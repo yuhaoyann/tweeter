@@ -67,7 +67,7 @@ $(document).ready(function() {
         
   $.get('/tweets', function(data) {
         
-    setTimeout(renderTweets(data), 10000)
+    renderTweets(data);
 
     $(".tweet-article article").hover(function() {
       $(this).css("box-shadow", "5px 5px rgb(142, 164, 172)");
