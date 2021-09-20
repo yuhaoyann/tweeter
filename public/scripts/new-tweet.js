@@ -13,7 +13,6 @@ $(document).ready(function() {
   $(".new-tweet form").submit(function(event) {
     event.preventDefault();
     let text = $("#tweet-text").val();
-    console.log(text.length)
     if (text === "" || text === null) {
       alert("Input cannot be empty or null");
     } else if (text.length > 140) {
@@ -38,31 +37,33 @@ $(document).ready(function() {
   function newPost() {
     const createTweetElement = function(tweet) {
       const $tweet = `
-        <article>
-          <header>
-            <div class="tweet-header-left">
-              <img src=${tweet.user.avatars}>
-              <p class="tweet-header-name">${tweet.user.name}</p>
-            </div>
-            <p class="tweet-header-handle">${tweet.user.handle}</p>
-          </header>
-            <p class="tweet-article-content">${tweet.content.text}</p>
-          <footer>
-            <div class="tweet-footer-time">${timeago.format(tweet.created_at)}</div>
-            <div class="tweet-footer-logo">
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="fas fa-heart"></i>
-            </div>
-          </footer>
-        </article>
+      <article>
+        <header>
+          <div class="tweet-header-left">
+            <img src=${tweet.user.avatars}>
+            <p class="tweet-header-name">${tweet.user.name}</p>
+          </div>
+          <p class="tweet-header-handle">${tweet.user.handle}</p>
+        </header>
+          <p class="tweet-article-content" id=${tweet.created_at}></p>
+        <footer>
+          <div class="tweet-footer-time">${timeago.format(tweet.created_at)}</div>
+          <div class="tweet-footer-logo">
+            <i class="fas fa-flag"></i>
+            <i class="fas fa-retweet"></i>
+            <i class="fas fa-heart"></i>
+          </div>
+        </footer>
+      </article>
       `
-    return $tweet;
+      return $tweet;
     }
         
   const renderTweets = function (tweets) {
-    const $tweet = createTweetElement(tweets[tweets.length - 1]);
+    let lastTweet = tweets[tweets.length - 1];
+    const $tweet = createTweetElement(lastTweet);
     $(".tweet-article").prepend($tweet);
+    $(`#${lastTweet.created_at}`).text(lastTweet.content.text);
   }
         
   $.get('/tweets', function(data) {
