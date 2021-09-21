@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
   $("#tweet-button button").hover(function() {
-    $(this).css({"border-color": "#545149"})
+    $(this).css({"border-color": "#4056A1", "background-color": "white", "color": "#4056A1"})
   }, function() {
-      $(this).css({"border-color": "#f4f1ec", "background-color": "#4056A1"})
+      $(this).css({"border-color": "#f4f1ec", "background-color": "#4056A1", "color": "white"})
   }).mousedown(function() {
-    $(this).css({"background-color": "#545149"})
+    $(this).css({"border-color": "#f4f1ec", "background-color": "#4056A1", "color": "white"})
   }).mouseup(function() {
-    $(this).css({"background-color": "#4056A1"})
+    $(this).css({"border-color": "#4056A1", "background-color": "white", "color": "#4056A1"})
   })
 
   $(".new-tweet form").submit(function(event) {

@@ -1,19 +1,27 @@
 $(document).ready(function() {
 
+  // $("#nav-button").text($("#nav-button").text().split(" ").map((element, index) => {
+  //   if (index === 0) {
+  //     element = element.bold();
+  //   }
+  //   return element
+  // }).join(" "))
+
   $("#nav-button").hover(function() {
     $(this).css({"border-color": "white"})
   }, function() {
-      $(this).css({"border-color": "#4056A1", "background-color": "#4056A1"})
+      $(this).css({"border-color": "rgb(201, 153, 64)", "background-color": "rgb(201, 153, 64)"})
   }).mousedown(function() {
-    $(this).css({"background-color": "#545149"})
-  }).mouseup(function() {
     $(this).css({"background-color": "#4056A1"})
+  }).mouseup(function() {
+    $(this).css({"background-color": "rgb(201, 153, 64)"})
   }).click(function() {
     if ($("#tweet-new-form").css("display") === "none") {
       $("#tweet-new-form").slideDown();
       $("#tweet-text").focus();
     } else if ($("#tweet-new-form").css("display") === "block") {
       $("#tweet-new-form").slideUp();
+      $("#error-message").slideUp();
     }
   })
 
