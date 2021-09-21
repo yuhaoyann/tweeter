@@ -41,6 +41,10 @@ nav div {
   font-weight: 200;
 }
 
+#nav-right-arrow {
+  height: 30px;
+}
+
 .nav-right-bold {
   font-weight: 400px;
   padding-right: 0.3em;
