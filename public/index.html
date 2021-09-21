@@ -29,7 +29,7 @@
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script type="text/javascript" src="/scripts/composer-auto-size.js"></script>
     <script type="text/javascript" src="/scripts/new-tweet.js"></script>
-    <script type="text/javascript" src="/scripts/nav-arrow-flash.js"></script>
+    <script type="text/javascript" src="/scripts/nav.js"></script>
 
   </head>
 
@@ -38,8 +38,9 @@
     <nav>
       <dev id="nav-element">
         <span id="nav-left">tweeter</span>
-        <div>
-          <span id="nav-right"><b class="nav-right-bold">Write</b>a new tweet</span>
+        <div id="nav-right">
+          <button id="nav-button"><b class="nav-right-bold">Write</b>a new tweet</button>
+          <!-- <span id="nav-right"><b class="nav-right-bold">Write</b>a new tweet</span> -->
           <div id="nav-right-arrow">
             <i class="fas fa-angle-double-down" id="nav-arrow"></i>
           </div>
@@ -71,14 +72,16 @@
           </div>
 
         </div>
-        <form action="/tweets/" method="POST">
-          <label for="tweet-text">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div id="tweet-button">
-            <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
+        <div id="tweet-new-form">
+          <form action="/tweets/" method="POST">
+            <label for="tweet-text">What are you humming about?</label>
+            <textarea name="text" id="tweet-text"></textarea>
+            <div id="tweet-button">
+              <button type="submit">Tweet</button>
+              <output name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+        </div>
       </section>
 
       <section class="tweet-article"></section>

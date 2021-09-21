@@ -3,7 +3,7 @@ $(document).ready(function() {
   $("#tweet-button button").hover(function() {
     $(this).css({"border-color": "#545149"})
   }, function() {
-      $(this).css({"border-color": "#f4f1ec"})
+      $(this).css({"border-color": "#f4f1ec", "background-color": "#4056A1"})
   }).mousedown(function() {
     $(this).css({"background-color": "#545149"})
   }).mouseup(function() {

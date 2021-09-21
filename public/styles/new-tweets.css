@@ -1,3 +1,7 @@
+#tweet-new-form {
+  display: none;
+}
+
 main section form {
   display: flex;
   flex-direction: column;
@@ -31,6 +35,7 @@ main section form label {
   overflow: hidden;
   font-family: sans-serif;
   font-weight: 400;
+  height: 56px;
 }
 
 #tweet-button {

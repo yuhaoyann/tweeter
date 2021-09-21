@@ -35,10 +35,18 @@ nav div {
 }
 
 #nav-right {
+  margin: 1em;
+}
+
+#nav-button {
+  color: white;
   display: flex;
   font-family: sans-serif;
   align-content: center;
   font-weight: 200;
+  background-color: #4056A1;
+  border: solid;
+  border-color: #4056A1;
 }
 
 #nav-right-arrow {
