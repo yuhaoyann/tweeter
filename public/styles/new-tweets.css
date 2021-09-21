@@ -55,3 +55,29 @@ main section form label {
   font-family: 'Bungee', cursive;
 }
 
+#error-message {
+  margin: 1em;
+  border: solid;
+  border-color: red;
+  width: auto;
+  display: none;
+}
+
+#error-message div {
+  margin: 0.3em;
+  display: flex;
+}
+
+#error-message i {
+  color: red;
+}
+
+#error-message p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  color: red;
+  font-family: sans-serif;
+  font-weight: 100;
+}

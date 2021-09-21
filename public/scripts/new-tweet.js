@@ -14,9 +14,11 @@ $(document).ready(function() {
     event.preventDefault();
     let text = $("#tweet-text").val();
     if (text === "" || text === null) {
-      alert("Input cannot be empty or null");
+      $("#error-message p").text('Input cannot be empty or null');
+      $("#error-message").slideDown();
     } else if (text.length > 140) {
-      alert("Input length cannot exceed 140")
+      $("#error-message p").text('Input length cannot exceed 140');
+      $("#error-message").slideDown();
     } else {
       let data = $( this ).serialize();
     $.post( "/tweets/", data, function() {
@@ -30,9 +32,9 @@ $(document).ready(function() {
         .always(function() {
           $("#tweet-text").val('').css("height", "56px");
           $(".counter").val(140).css("color", "#545149");
+          $("#error-message").slideUp();
         });
     }
-
 
   function newPost() {
     const createTweetElement = function(tweet) {
