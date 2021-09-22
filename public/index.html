@@ -31,35 +31,37 @@
     <script type="text/javascript" src="/scripts/composer-auto-size.js"></script>
     <script type="text/javascript" src="/scripts/new-tweet.js"></script>
     <script type="text/javascript" src="/scripts/nav.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
 
   </head>
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <nav>
-      <dev id="nav-element">
-        <span id="nav-left">tweeter</span>
-        <div id="nav-right">
-          <button id="nav-button"><b id="nav-right-bold">Write&nbsp</b>a new tweet</button>
-          <!-- <button id="nav-button">Write a new tweet</button> -->
-          <div id="nav-right-arrow">
-            <i class="fas fa-angle-double-down" id="nav-arrow"></i>
+    <div id="nav-header">
+      <nav>
+        <dev id="nav-element">
+          <span id="nav-left">tweeter</span>
+          <div id="nav-right">
+            <button id="nav-button"><b id="nav-right-bold">Write&nbsp</b>a new tweet</button>
+            <div id="nav-right-arrow">
+              <i class="fas fa-angle-double-down" id="nav-arrow"></i>
+            </div>
           </div>
+        </dev>
+      </nav>
+  
+      <header id="header-main">
+        <div id="header-element">
+          <div>
+            <img id="header-avator" src="/images/profile-hex.png"> 
         </div>
-      </dev>
-    </nav>
-
-    <header id="header-main">
-      <div id="header-element">
-        <div>
-          <img id="header-avator" src="/images/profile-hex.png"> 
-      </div>
-      <br>
-      <div id="nav-mid">
-          <p id="header-word"><b id="nav-mid-bold">Amy&nbsp</b><b id="nav-mid-normal">Mansell</b></p>
-      </div>
-      </div>
-    </header>
+        <br>
+        <div id="nav-mid">
+            <p id="header-word"><b id="nav-mid-bold">Amy&nbsp</b><b id="nav-mid-normal">Mansell</b></p>
+        </div>
+        </div>
+      </header>
+    </div>
 
     <!-- Page-specific (main) content here -->
     <main class="container">
