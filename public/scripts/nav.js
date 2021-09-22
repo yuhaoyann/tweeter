@@ -1,12 +1,5 @@
 $(document).ready(function() {
 
-  // $("#nav-button").text($("#nav-button").text().split(" ").map((element, index) => {
-  //   if (index === 0) {
-  //     element = element.bold();
-  //   }
-  //   return element
-  // }).join(" "))
-
   $("#nav-button").hover(function() {
     $(this).css({"border-color": "white"})
   }, function() {
