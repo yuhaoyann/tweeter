@@ -33,6 +33,7 @@ $(document).ready(function() {
           $("#tweet-text").val('').css("height", "56px");
           $(".counter").val(140).css("color", "#545149");
           $("#error-message").slideUp();
+          $("#tweet-new-form").slideUp();
         });
     }
 
