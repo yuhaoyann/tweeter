@@ -1,0 +1,25 @@
+.main-circle-arrow {
+  display: flex;
+  position: fixed;
+  justify-content:center;
+  align-items: center;
+  right: 2em;
+  bottom: 2em;
+}
+
+#main-circle {
+  position: fixed;
+  color: red;
+  font-size: 70px;
+}
+
+#main-arrow {
+  position: fixed;
+  color: white;
+  font-size: 40px;
+  vertical-align: middle;
+}
+
+#main-hide {
+  display: none;
+}
