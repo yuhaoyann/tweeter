@@ -1,13 +1,13 @@
 $(document).ready(function() {
 
   $("#nav-button").hover(function() {
-    $(this).css({"border-color": "white"})
+    $(this).css({"border-color": $("nav").css("color"), "background-color": $("nav").css("color"), "color": $("nav").css("background-color")})
   }, function() {
-      $(this).css({"border-color": "rgb(201, 153, 64)", "background-color": "rgb(201, 153, 64)"})
+      $(this).css({"border-color": $("nav").css("background-color"), "background-color": $("nav").css("background-color"), "color": $("nav").css("color")})
   }).mousedown(function() {
-    $(this).css({"background-color": "#4056A1"})
+    $(this).css({"border-color": $("nav").css("background-color"), "background-color": $("nav").css("background-color"), "color": $("nav").css("color")})
   }).mouseup(function() {
-    $(this).css({"background-color": "rgb(201, 153, 64)"})
+    $(this).css({"border-color": $("nav").css("color"), "background-color": $("nav").css("color"), "color": $("nav").css("background-color")})
   }).click(function() {
     if ($("#tweet-new-form").css("display") === "none") {
       $("#tweet-new-form").slideDown();
@@ -16,6 +16,10 @@ $(document).ready(function() {
       $("#tweet-new-form").slideUp();
       $("#error-message").slideUp();
     }
+  })
+
+  $(window).resize(function() {
+    $("#nav-button").css({"border-color": $("nav").css("background-color"), "background-color": $("nav").css("background-color")})
   })
 
   function foo() {

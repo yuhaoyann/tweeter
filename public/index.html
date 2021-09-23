@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="/styles/new-tweets.css" type="text/css" />
     <link rel="stylesheet" href="/styles/article.css" type="text/css" />
     <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/responsive-design.css" type="text/css" />
     
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -37,19 +38,20 @@
 
   <body>
     <!-- Top nav bar (fixed) -->
-    <div id="nav-header">
-      <nav>
-        <dev id="nav-element">
-          <span id="nav-left">tweeter</span>
-          <div id="nav-right">
-            <button id="nav-button"><b id="nav-right-bold">Write&nbsp</b>a new tweet</button>
-            <div id="nav-right-arrow">
-              <i class="fas fa-angle-double-down" id="nav-arrow"></i>
-            </div>
+    
+    <nav>
+      <dev id="nav-element">
+        <span id="nav-left">tweeter</span>
+        <div id="nav-right">
+          <button id="nav-button"><b id="nav-right-bold">Write&nbsp</b>a new tweet</button>
+          <div id="nav-right-arrow">
+            <i class="fas fa-angle-double-down" id="nav-arrow"></i>
           </div>
-        </dev>
-      </nav>
-  
+        </div>
+      </dev>
+    </nav>
+    
+    <div id="header-and-main">
       <header id="header-main">
         <div id="header-element">
           <div>
@@ -61,7 +63,7 @@
         </div>
         </div>
       </header>
-    </div>
+    
 
     <!-- Page-specific (main) content here -->
     <main class="container">
@@ -95,7 +97,6 @@
 
       <section class="tweet-article"></section>
     </main>
-
-    <footer>Tweet by Haoyan</footer>
+  </div>
   </body>
 </html>

@@ -23,9 +23,10 @@ body {
 
 main {
   width: 90%;
-  padding:auto;
-  margin:auto;
-  text-align:centre;
+  padding: auto;
+  margin: auto;
+  margin-bottom: 2em;
+  text-align: centre;
   background-color: #f4f1ec;
 }
 

@@ -1,8 +1,8 @@
 #header-main {
   height: 400px;
   width: 100%;
-  background-color:rgb(201, 153, 64);
   position:relative;
+  background-color:rgb(201, 153, 64);
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
 }
 
@@ -16,7 +16,7 @@
 #header-avator {
   padding-top: 120px;
   width: 150px;
-  height: 270px;
+  height: auto;
 }
 
 #header-word {

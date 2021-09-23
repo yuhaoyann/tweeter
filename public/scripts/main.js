@@ -2,10 +2,14 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
    if ($(window).scrollTop() > 0) {
-     $("#nav-header").slideUp();
+     if ($(window).width() >= 1024){
+       $("nav").slideUp();
+      } else {
+       $("nav, header").slideUp();
+     }
      $("#main-hide").slideDown();
     } else {
-      $("#nav-header").slideDown();
+      $("nav, header").slideDown();
       $("#main-hide").slideUp();
    }
   })

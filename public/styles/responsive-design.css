@@ -1,0 +1,39 @@
+@media only screen and (min-width: 1024px) {
+  nav {
+    background-color: #4056A1;
+    background-image: none;
+  }
+
+  #nav-button {
+    background-color: #4056A1;
+    background-image: none;
+    border-color: #4056A1;
+  }
+
+  html {
+    width: 100%;
+  }
+  
+  #header-main {
+    height: 300px;
+    margin: 2em;
+    width: 45%;
+  }
+
+  #header-avator {
+    padding-top: 40px;
+    width: 150px;
+    height: auto;
+  }
+
+  #header-and-main {
+    display: flex;
+    margin-top: 5em;
+  }
+
+  main {
+    width: 55%;
+    margin-right: 2em;
+    float: right;
+  }
+}
