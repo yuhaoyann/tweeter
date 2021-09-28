@@ -1,3 +1,5 @@
+@use 'base';
+
 nav {
   height: 120px;
   width: 100%;
@@ -5,19 +7,22 @@ nav {
   position: absolute;
   top: 0;
   z-index: 1;
-  background-color: #c99940;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-}
-nav span {
-  font-family: "Bungee", cursive;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-}
-nav div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background-color: base.$main-color-yellow;
+  background-image: base.$main-back-texture;
+
+  span {
+    font-family: 'Bungee', cursive;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
 }
 
 #nav-element {
@@ -54,10 +59,10 @@ nav div {
   color: white;
   font-family: sans-serif;
   font-weight: 200;
-  background-color: #c99940;
+  background-color: base.$main-color-yellow;
   border: solid;
-  border-color: #c99940;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  border-color: base.$main-color-yellow;
+  background-image: base.$main-back-texture;
 }
 
 #nav-right-arrow {

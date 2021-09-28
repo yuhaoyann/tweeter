@@ -1,12 +1,16 @@
+@use 'base';
+
 main section form {
   display: flex;
   flex-direction: column;
   margin: 0.5em;
-}
-main section form label {
-  margin-top: 2em;
-  font-family: sans-serif;
-  font-weight: 600;
+
+  label {
+    margin-top: 2em;
+    font-family: sans-serif;
+    font-weight: 600
+  }
+
 }
 
 .new-tweet {
@@ -29,7 +33,7 @@ main section form label {
   border-bottom-width: 5px;
   margin-top: 1em;
   outline: none;
-  background-color: #f4f1ec;
+  background-color: base.$main-color-white;
   resize: none;
   overflow: hidden;
   font-family: sans-serif;
@@ -44,19 +48,19 @@ main section form label {
 }
 
 #tweet-button button {
-  background-color: #4056A1;
+  background-color: base.$main-color-blue;
   color: white;
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
   padding-top: 0.1em;
   padding-bottom: 0.1em;
   padding-left: 0.5em;
   padding-right: 0.5em;
   border: solid;
-  border-color: #f4f1ec;
+  border-color: base.$main-color-white;
 }
 
 #tweet-button output {
-  font-family: "Bungee", cursive;
+  font-family: 'Bungee', cursive;
 }
 
 #error-message {

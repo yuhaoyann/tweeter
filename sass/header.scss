@@ -1,9 +1,11 @@
+@use 'base';
+
 #header-main {
   height: 400px;
   width: 100%;
   position: relative;
-  background-color: #c99940;
-  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  background-color: base.$main-color-yellow;
+  background-image: base.$main-back-texture;
 }
 
 #header-element {

@@ -1,23 +1,28 @@
+@use 'base';
+
 @media only screen and (min-width: 1024px) {
   html {
     width: 100%;
-  }
-  html main {
-    width: 55%;
-    margin-right: 2em;
-    float: right;
-  }
-  html nav {
-    background-color: #4056A1;
-    background-image: none;
+
+    main {
+      width: 55%;
+      margin-right: 2em;
+      float: right;
+    }
+
+    nav {
+      background-color: base.$main-color-blue;
+      background-image: none;
+    }
   }
 
   #nav-button {
-    background-color: #4056A1;
+    background-color: base.$main-color-blue;
     background-image: none;
-    border-color: #4056A1;
+    border-color: base.$main-color-blue;
   }
 
+  
   #header-main {
     height: 300px;
     margin: 2em;
