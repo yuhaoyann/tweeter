@@ -13,8 +13,9 @@ Built upon the starter code, I used HTML, CSS, JS, jQuery and AJAX front-end ski
 
 ## Final Product
 
-!["main page"](https://github.com/yuhaoyann/tinyapp/blob/master/docs/urls-page.png)
-!["edit page"](https://github.com/yuhaoyann/tinyapp/blob/master/docs/urls-edit.png)
+!["tweeter wide"](https://github.com/yuhaoyann/tweeter/blob/master/docs/tweeter-wide.png)
+!["tweeter narrow"](https://github.com/yuhaoyann/tweeter/blob/master/docs/tweeter-narrow.png)
+!["tweeter long"](https://github.com/yuhaoyann/tweeter/blob/master/docs/tweet-long.png)
 
 ## Dependencies
 
