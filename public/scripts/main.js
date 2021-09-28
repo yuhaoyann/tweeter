@@ -3,10 +3,12 @@ $(document).ready(function() {
   $(window).scroll(function() {
    if ($(window).scrollTop() > 0) {
      if ($(window).width() >= 1024){
+       $(".container").css("min-height", "100vh");
        $("nav").slideUp();
       } else {
-       $("nav, header").slideUp();
-     }
+        $(".container").css("min-height", "100vh");
+        $("nav, header").slideUp();
+      }
      $("#main-hide").slideDown();
     } else {
       $("nav, header").slideDown();
