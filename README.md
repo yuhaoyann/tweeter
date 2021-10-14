@@ -9,7 +9,7 @@ Built upon the starter code, I used HTML, CSS, JS, jQuery and AJAX front-end ski
 1. Go to [Tweeter](https://github.com/yuhaoyann/tweeter), fork and clone the repo to local.
 2. Cd into the repository and install all dependencies (using the `npm install` command).
 3. Set up server by `npm run local` command in terminal.
-4. In web browser (Chrome preferred) open [this page](http://localhost:8080/urls)
+4. In web browser (Chrome preferred) open [this page](http://localhost:8080)
 
 ## Final Product
 
