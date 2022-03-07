@@ -4,6 +4,8 @@ Tweeter is a simple, single-page Twitter clone.
 
 Built upon the starter code, I used HTML, CSS, JS, jQuery and AJAX front-end skills, as well as Node, Express and MongoDB back-end skills to visualize the page and add functions to the mini-tweeter page.
 
+https://haoyan-miniblog.herokuapp.com/
+
 ## Getting Started
 
 1. Go to [Tweeter](https://github.com/yuhaoyann/tweeter), fork and clone the repo to local.
